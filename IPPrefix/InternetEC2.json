@@ -1,0 +1,15 @@
+{
+	"definition":{
+		"type": "object",
+		"properties": {
+			"ip_prefix" : {"type" : "string"},
+			"network" : {"type" : "string"},
+			"region" : {"type" : "string"},
+			"type" : {"type" : "string"},
+			"firewall" : {"type" : "string"}
+		}
+	}
+}
+
+
+

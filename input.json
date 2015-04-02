@@ -1,0 +1,14 @@
+{
+	"suncToken":"1380134403",
+	"createDate" :"2013-09-25-18-40-03",
+	"prefixes" : [
+		{
+			"ip_prefix" : "50.19.0.0/16",
+			"network" : "EC2",
+			"region" : "IAD",
+			"type" : "PublicIP"
+		}
+	]
+}
+
+
