@@ -5,9 +5,12 @@
 			"ip_prefix" : {"type" : "string"},
 			"network" : {"type" : "string"},
 			"region" : {"type" : "string"},
-			"type" : {"type" : "string"},
-			"firewall" : {"type" : "string"}
-		}
+			"type" : {"enum" : ["RFC1918"]},
+			"az": {"type" : "string"},
+			"brick name" : {"type" : "string"},
+			"black foot" : {"enum" : ["VPC-VPN", "VPC-IA"]},
+			"description":{"type" : "string"}
+		},
+		"required":["az","brick name","black foot","ip_prefix","network","region","type"]
 	}
-
 }
