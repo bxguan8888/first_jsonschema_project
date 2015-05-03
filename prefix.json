@@ -1,14 +1,26 @@
 {
-	"type" : "object",
-	"properties":{
+	"prefixes": {
+		"type" : "object",
+		"properties":{
 		"suncToken": {"type" : "string"},
 		"createDate":{"type" : "string"},
 		"prefixes" :{
 			"type" : "array",
 			"items" : {
 				"oneOf" :[
-				{
-					"type": "object",
+				{"$ref" : "#/prefix1"},
+				{"$ref" : "#/prefix2"}
+				]
+			}
+		}
+	},
+
+	"additionalProperties" : false
+
+	},
+
+	"prefix1" :{
+			"type": "object",
 					"properties": {
 						"ip_prefix" : {"type" : "string"},
 						"network" : {"type" : "string"},
@@ -17,9 +29,11 @@
 				},		
 				"required" : ["ip_prefix","network","region","type"],	
 					"additionalProperties" : false
-				},
-				{
-					"type": "object",
+	},
+
+
+	"prefix2" :{
+		"type": "object",
 					"properties": {
 						"ip_prefix" : {"type" : "string"},
 						"network" : {"type" : "string"},
@@ -28,12 +42,12 @@
 						"description":{"type" : "string"}
 				},		
 				"required" : ["ip_prefix","network","region","type"],	
-				"additionalProperties" : false
-				}
-				]
-			}
-		}
-	},
+				"additionalProperties" : false	
 
-	"additionalProperties" : false
+	}
+
+
+
 }
+
+

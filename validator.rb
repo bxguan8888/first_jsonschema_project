@@ -73,7 +73,7 @@ json_data = JSON.parse(data)
 # prefixes = JSON.parse(prefixes)
 
 #method 2 to load json schema
-prefixes = {"$ref" => "prefix.json#/"}
+prefixes = {"$ref" => "prefix.json#/prefixes"}
 
 puts prefixes
 
