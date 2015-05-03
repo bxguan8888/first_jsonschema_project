@@ -8,8 +8,7 @@
 			"type" : {"enum" : ["RFC3330"]}
 		},
 		
-		"required" : ["ip_prefix","network","region","type"],
-		
-		"additionalProperties" : { "type": "false"}
+		"required" : ["ip_prefix","network","region","type"],	
+		"additionalProperties" : false
 	}
 }

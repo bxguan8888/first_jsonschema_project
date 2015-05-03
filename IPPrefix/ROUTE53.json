@@ -9,6 +9,6 @@
 			"description":{"type" : "string"}
 		},
 		"required":["ip_prefix","network","region","type"],
-		"additionalProperties" : { "type": "false"}
+		"additionalProperties" : false
 	}
 }

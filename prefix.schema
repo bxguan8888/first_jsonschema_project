@@ -1,0 +1,21 @@
+{
+
+		"type" : "array",
+		"items" : {
+			"oneOf" :[
+			{
+				"type": "object",
+				"properties": {
+					"ip_prefix" : {"type" : "string"},
+					"network" : {"type" : "string"},
+					"region" : {"type" : "string"},
+					"type" : {"enum" : ["RFC3330"]}
+			},		
+			"required" : ["ip_prefix","network","region","type"],	
+			"additionalProperties" : false
+			}
+			]
+		}
+
+	
+}
