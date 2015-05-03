@@ -11,18 +11,22 @@ IP_json_schema={
 			"type" => "array",
 			"items" => {
 				"oneOf"=> [
-					{"$ref" => "IPPrefix/InternetEC2.json#/definition"},
-					{"$ref" => "IPPrefix/BorderEC2.json#/definition"},
-					{"$ref" => "IPPrefix/AZEC2.json#/definition"},
-					{"$ref" => "IPPrefix/CLOUDFRONT.json#/definition"},
-					{"$ref" => "IPPrefix/DX.json#/definition"},
-					{"$ref" => "IPPrefix/INGEST.json#/definition"},
-					{"$ref" => "IPPrefix/PROD.json#/definition"},
-					{"$ref" => "IPPrefix/ROUTE53.json#/definition"}
+					# {"$ref" => "IPPrefix/InternetEC2.json#/definition"},
+					# {"$ref" => "IPPrefix/BorderEC2.json#/definition"},
+					# {"$ref" => "IPPrefix/AZEC2.json#/definition"},
+					# {"$ref" => "IPPrefix/CLOUDFRONT.json#/definition"},
+					# {"$ref" => "IPPrefix/DX.json#/definition"},
+					# {"$ref" => "IPPrefix/INGEST.json#/definition"},
+					# {"$ref" => "IPPrefix/PROD.json#/definition"},
+					{"$ref" => "IPPrefix/ROUTE53.json#/definition"},
+					{"$ref" => "IPPrefix/generic.json#/definition"}
 				]
+				# "type" => {"$ref" => "IPPrefix/generic.json#/definition"}
+
 			}
 		}
-	}
+	},
+	"additionalProperties" => {"type" => "false"}
 }
 
 
@@ -52,7 +56,10 @@ json_data = JSON.parse(data)
 # end
 
 
-# errors = JSON::Validator.fully_validate(IP_json_schema, json_data)
 
 errors = JSON::Validator.fully_validate(IP_json_schema, json_data)
-puts errors
+if errors.empty?
+	puts true
+else
+	raise StandardError, "fuck!"
+end

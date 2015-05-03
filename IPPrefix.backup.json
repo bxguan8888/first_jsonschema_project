@@ -1,19 +1,19 @@
 {
-							"type": "object",
-							"properties": {
-								"ip_prefix" : {"type" : "string"},
-								"network" : {"type" : "string"},
-								"region" : {"type" : "string"},
-								"type" : {"type" : "string"}
+							"type"=> "object",
+							"properties"=> {
+								"ip_prefix" => {"type" => "string"},
+								"network" => {"type" => "string"},
+								"region" => {"type" => "string"},
+								"type" => {"type" => "string"}
 							}
 						},
 
 
-						{"$ref" : "IPPrefix/InternetEC2.json#/definition"},
-						{"$ref" : "IPPrefix/BorderEC2.json#/definition"},
-						{"$ref" : "IPPrefix/AZEC2.json#/definition"},
-						{"$ref" : "IPPrefix/CLOUDFRONT.json#/definition"},
-						{"$ref" : "IPPrefix/DX.json#/definition"},
-						{"$ref" : "IPPrefix/INGEST.json#/definition"},
-						{"$ref" : "IPPrefix/PROD.json#/definition"},
-						{"$ref" : "IPPrefix/ROUTE53.json#/definition"}
+						{"$ref" => "IPPrefix/InternetEC2.json#/definition"},
+						{"$ref" => "IPPrefix/BorderEC2.json#/definition"},
+						{"$ref" => "IPPrefix/AZEC2.json#/definition"},
+						{"$ref" => "IPPrefix/CLOUDFRONT.json#/definition"},
+						{"$ref" => "IPPrefix/DX.json#/definition"},
+						{"$ref" => "IPPrefix/INGEST.json#/definition"},
+						{"$ref" => "IPPrefix/PROD.json#/definition"},
+						{"$ref" => "IPPrefix/ROUTE53.json#/definition"}

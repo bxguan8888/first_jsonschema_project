@@ -6,7 +6,13 @@
 			"ip_prefix":"50.19.0.0",
 			"network":"EC2",
 			"region":"IAD",
-			"type":"PublicIP"
+			"type":"RFC3330"
+		},
+		{
+			"ip_prefix":"50.19.0.0",
+			"network":"EC2",
+			"region":"IAD",
+			"type":"RFC3330s"
 		}
 	]
 }

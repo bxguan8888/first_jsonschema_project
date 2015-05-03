@@ -4,11 +4,12 @@
 		"properties": {
 			"ip_prefix" : {"type" : "string"},
 			"network" : {"type" : "string"},
-			"region" : {"enum" : ["GLOBAL"]},
-			"type" : {"enum" : ["DNS"]},
-			"description":{"type" : "string"}
+			"region" : {"type" : "string"},
+			"type" : {"enum" : ["RFC3330"]}
 		},
-		"required":["ip_prefix","network","region","type"],
+		
+		"required" : ["ip_prefix","network","region","type"],
+		
 		"additionalProperties" : { "type": "false"}
 	}
 }
