@@ -61,5 +61,5 @@ errors = JSON::Validator.fully_validate(IP_json_schema, json_data)
 if errors.empty?
 	puts true
 else
-	raise StandardError, "fuck!"
+	raise StandardError,  (puts errors)
 end
